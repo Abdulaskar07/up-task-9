@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    box-shadow: 0.5px 0px 20px rgb(163, 155, 155) ;
+    align-items: center;
+}
+nav section{
+    font-weight: 700;
+    font-size: x-large;
+}
+nav ul{
+    display: flex; 
+    justify-content: space-evenly;
+     width: 50%;
+     list-style: none;
+
+}nav h3{
+    color: blue;
+    background-color:lightblue;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+
+}
+.Words{
+    /* background-color: aqua; */
+    padding: 10px 180px;
+    
+   
+}
+h1{
+    padding: 0 150px 0 0;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+h1 span{
+   /* background-color: blue; */
+   padding: 5px;
+   border-radius: 10px;
+   color: blue;
+   
+}
+p{
+    line-height: 23px;
+    margin-top: 5px;
+
+}
+button{
+    width: 40vh;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: blue;
+    border: none;
+    color: white;
+    font-size: large;
+}
+/* .btn-container{
+    background-color: antiquewhite;
+} */
+button:hover{
+    transform: scale(1.1) rotate(-10deg);
+    transition: 0.5s;
+
+}
+
+.image{
+    height:70vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-right:  60px ;
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 40vh;
+    width: 70vh;
+    margin: 15px 0px 0px 0px ;
+    border-radius: 10px;
+    box-shadow:0 0 20px 0.1px   ;
+
+}
+img:hover{
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(-30px);
+    }
+    20%{
+        transform:translateX(-30px)  translateY(-30px);
+    }
+    40%{
+        transform: translateX(30px) translateY(-30px);
+    }
+    60%{
+        transform:translateX(30px) translatey(30px);
+    }
+    80%{
+        transform: translateX(0px) translateY(0px);
+    }
+    90%{
+       transform: scale(0.7,1.3);
+    }
+
+}
